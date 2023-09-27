@@ -1,67 +1,43 @@
 .movie_card{
-    /* align-items: center;
-    text-align: center;
-    transition: 0.5s; */
+    transition: 0.5s;
+    overflow: hidden;
     position: relative;
     width: 220px;
     height: 350px;
-    background: #232323;
     border-radius: 20px;
-    overflow: hidden;
+    background-color: #153c54;
 }
 .movie_card:before {
     
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1a2427;
-    transition: 0.5s ease-in-out;
 }
 .movie_card:after {
-    /* content: "Nike"; */
-    position: absolute;
-    top: 30%;
-    left: -20%;
-    font-size: 12em;  
-    font-weight: 800;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
-}
-
-/* .movie_card:hover{
-    opacity: 0.5;
-    transform: translateY(-20px);
-    transition: 0.5s;
-} */
-
-.movie_title{
-    color:white;
 }
 
 .movie_card .poster {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    object-fit: cover;
+
 }
 .movie_card:hover .poster {
-    top: 0%;
     transform: translateY(-30%);
-    /* bug  */
+
+}
+.movie_card .poster{
+    /* border-radius: 20px; */
+    position: absolute;
+    /* top:50%; */
+
+    /* height: 350px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.5s;
+    z-index: 100;
 }
 .movie_card .poster img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(20deg);
-    width: 270px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 .movie_card .contentBx {
     position: absolute;
@@ -72,81 +48,43 @@
     transition: 1s;
     z-index: 90;
 }
-.movie_card:hover .contentBx {
-    height: 210px;
-}
+
+/* .movie_card:hover .contentBx {
+} */
+
 .movie_card .contentBx h2 {
     position: relative;
     font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.movie_card .contentBx .size,
-.movie_card .contentBx .color {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-    transition: .5s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.movie_card:hover .contentBx .size {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .5s;
-}
-.movie_card:hover .contentBx .color {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .6s;
-}
-
-.movie_card .contentBx .size h3,
-.movie_card .contentBx .color h3 {
     color: white;
-    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
-}
+    margin: 0px 5px 10px 5px;
 
-.movie_card .contentBx .size span {
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    font-size: 14px;
-    display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: .5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 @media(max-width:650px){
-    .movie_card .poster{
-        width: 90%;
-        height: auto;
-    }
+.movie_card {
+    width: 90%;
+    height: 500px;
+    } 
 }
 .details-button {
-    background-color: #1e4f6f;
+    background-color: #001a21;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* position: absolute;
+    bottom: 10px;
+    width: 50%;
+    margin: auto; */
 }
 
 .details-button:hover {
-    background-color: #153c54;
-    cursor: pointer;
-}
+    background-color: #1e4f6f;
+    cursor: pointer;}

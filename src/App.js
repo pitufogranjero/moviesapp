@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import { MyRoutes } from './routers/routes'
 import { SearchBar } from './components/SearchBar'; 
-import { LandingPage } from './pages/LandingPage';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');

@@ -10,9 +10,9 @@ export function MovieCard({ movie }){
 
             <img className="poster" width={230} height={345} src={imageUrl} alt='x' />
             <div className="contentBx">
+                <button className="details-button">Details</button>    
                 <h2>{movie.title}</h2>
             </div>    
-            <button className="details-button">Details</button>    
         </Link>
         </div>
     )

@@ -4,7 +4,7 @@ import { get } from '../data/httpClient'
 import "./ContextMovieCard.css"
 
 export function ContextMovieCard({ searchQuery }){
-    console.log('ContextMovieCard -> ' + searchQuery)
+    // console.log('ContextMovieCard -> ' + searchQuery)
 
     const [movies, setMovies] = useState([])
 
@@ -21,7 +21,7 @@ export function ContextMovieCard({ searchQuery }){
             endpointRef.current = '/movie/popular/'
             messageRef.current = 'Popular Movies'
         }
-        console.log(endpointRef.current + ' - ' + messageRef.current)
+        // console.log(endpointRef.current + ' - ' + messageRef.current)
 
         get(endpointRef.current).then((data) => {
             setMovies(data.results);
