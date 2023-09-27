@@ -1,0 +1,42 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    max-width: 400px;
+    margin:15px;
+    height: auto;
+    width: 80%;
+}
+.movieImage{
+    border-radius: 10px;
+}
+.title{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color:white;
+    font-weight: 600;
+}
+
+.movieDetails{
+    /* font-size: 1.5rem; */
+    color:white
+}
+
+.back-button {
+    background-color: #1e4f6f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #153c54;
+    cursor: pointer;
+  }
