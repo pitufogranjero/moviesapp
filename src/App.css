@@ -14,10 +14,10 @@
 }
 
 .title {
-  text-align: 3rem;
+  font-size: 3rem;
   text-align: left;
-  /* color:brown; */
   margin-right: 10px;
   line-height:80%;
   width: 100%;
+  margin-top: 20px !important;
 }

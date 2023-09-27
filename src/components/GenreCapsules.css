@@ -1,0 +1,14 @@
+.genre-capsules {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.genre-capsule {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #153c54;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+}

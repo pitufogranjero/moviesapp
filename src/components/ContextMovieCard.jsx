@@ -31,7 +31,7 @@ export function ContextMovieCard({ searchQuery }){
 
     return(
         <div className='context-movie-card'>
-            <h1>{messageRef.current}</h1>
+            <h3>{messageRef.current}</h3>
             <div className="movie-container">
                 {movies.map((movie) => ( 
                     <MovieCard key={movie.id} movie={movie} />

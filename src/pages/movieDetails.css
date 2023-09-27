@@ -4,6 +4,10 @@
     flex-wrap: wrap;
 }
 
+/* .detailsContainer img{
+    width: 50% !important;
+} */
+
 .col{
     max-width: 400px;
     margin:15px;
@@ -12,6 +16,7 @@
 }
 .movieImage{
     border-radius: 10px;
+    object-fit: cover;
 }
 .title{
     margin-top: 5px;
@@ -34,9 +39,17 @@
     border-radius: 5px;
     font-size: 16px;
     margin-top: 20px;
-  }
-  
-  .back-button:hover {
+}
+
+.back-button:hover {
     background-color: #153c54;
     cursor: pointer;
-  }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+p {
+    margin-top: 15px;
+}

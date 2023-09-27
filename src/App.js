@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { MyRoutes } from './routers/routes'
 import { SearchBar } from './components/SearchBar'; 
 
+
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className='container'>
       <header className='header'>
-        <h1 className='title'>The<br/>Movie<br/>Tracker</h1>
+      <h1 className='title'>The<br/>Movie<br/>Tracker</h1>
         <SearchBar onSearch={handleSearch} />
       </header>
       {/* <LandingPage searchQuery={searchQuery} /> */}
