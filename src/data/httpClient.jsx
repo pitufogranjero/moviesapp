@@ -1,8 +1,7 @@
 require('dotenv').config();
 const apiKey = process.env.API_KEY;
-console.log(apiKey)
-
 const url = "https://api.themoviedb.org/3";
+console.log(apiKey)
 
 export function get(path){
     return fetch(url + path, {
