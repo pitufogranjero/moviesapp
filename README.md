@@ -1,8 +1,8 @@
-## MovieApp
+# MovieApp
 
 #### Purpose:
 
-Este proyecto se realiza para aprender nuevas técnicas con React y REST-API
+This project is realised to learn new techniques with `React` and `REST-API`
 
 ## Project Status
 
@@ -41,6 +41,7 @@ To Visit App:
 ## Reflection
 
   - What was the context for this project?
+
   - What did you set out to build?
   - Why was this project challenging and therefore a really good learning experience?
   - What were some unexpected obstacles?
